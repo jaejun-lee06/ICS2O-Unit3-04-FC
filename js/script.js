@@ -8,12 +8,12 @@
  */
 function calculate () {
   // input
-  const radius = parseFloat(document.getElementById('radius-of-sphere').value)
+  const fahrenheit = parseFloat(document.getElementById('fahrenheit').value)
 
   // process
-  const volume = (4 / 3) * Math.PI * radius * radius * radius
+  const celsius = (fahrenheit - 32) * 5 / 9
 
 
   // output
-  document.getElementById('volume').innerHTML = 'The volume is: ' + volume.toFixed(2) + ' cm³'
+  document.getElementById('celsius').innerHTML = 'The temperature is: ' + celsius.toFixed(2) + '°C'
 }
